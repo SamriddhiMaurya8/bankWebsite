@@ -1,0 +1,15 @@
+@import '_component6' ; 
+@import '_component3' ; 
+@import '_awards' ; 
+@import '_header';
+@import '_contentSection' ; 
+@import '_mainDiv';
+@import '_dualLayout'  ; 
+@import '_carouselContainer' ; 
+@import '_contactSection' ;
+@import '_mainCarouselContainer'  ;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color1;
+}

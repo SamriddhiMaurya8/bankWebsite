@@ -1,0 +1,91 @@
+.mainDiv{
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .upperDiv{
+        background-color: green;
+        height: 70%;
+        display: flex;
+
+        .upperDivLeft{
+            width: 75%;
+            height: 100%;
+            background-color: gold;
+
+            display: flex;
+            flex-direction: column;
+
+            .upperDivLeftTop{
+                height: 40%;
+                background-color: red;
+                display: flex;
+
+                .upperDivLeftTopLeft{
+                    width: 50%;
+                    background-color: darkcyan;
+                }
+
+                .upperDivLeftTopRight{
+                    width: 50%;
+                    background-color: darkkhaki;
+                }
+            }
+            
+            .upperDivLeftBottom{
+                height: 60%;
+                background-color: pink;
+                display: flex;
+
+                .upperDivLeftBottomLeft{
+                    width: 30%;
+                    background-color: darkorange
+                }
+
+                .upperDivLeftBottomRight{
+                    width: 70%;
+                    background-color: darkgoldenrod
+                }
+            }
+        }
+
+        .upperDivRight{
+            width: 25%;
+            height: 100%;
+            background-color: violet;
+
+            display: flex;
+            flex-direction: column;
+
+            .upperDivRightTop{
+                height: 60%;
+                background-color: #333;
+            }
+
+            .upperDivRightBottom{
+                height: 40%;
+                background-color: #fff;
+            }
+        }
+    }
+    
+    .lowerDiv{
+        background-color: brown;
+        height: 30%;
+        display: flex;
+
+        .lowerDiv1{
+            width: 50%;
+            height: 100%;
+            background-color: blue;
+        }
+
+        .lowerDiv2{
+            width: 50%;
+            height: 100%;
+            background-color: blueviolet;
+        }
+    }
+}

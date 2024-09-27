@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- carousel-top  -->
+ 
+
+
+
+<!-- header -->
+
+    <div class="sub-header">
+        <div class="sub-header__content">
+            <img class="indus-logo" src="./assets/IndusIndBankLogo.png" alt="logo">
+            <div class="sub-header__content--right">
+               <div class="email-div">
+                <p>abc@gmail.com</p>
+               </div>
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="sub-header-two">
+       <div class="sub-header-two__content">
+        <img class="logo-img" src="./assets/Sattvam_Logo_white.png" alt="sattvam logo ">
+        <i class="fa-solid fa-bars" ></i>
+       </div>
+    </div>
+
+
+
+<!-- main -carousel  -->
+    <div class="mainCarousel">
+        <div class="mainCarousel__slide active">
+            <img src="https://picsum.photos/536/354" alt="Slide Image 1" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>The IndusInd Social Impact Story</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">BEYOND BANKING</h2>
+                <p class="mainCarousel__slide--content-paragraph">We are committed to building a sustainable future through holistic, integrated development.</p>
+                <a href="#" class="button">Know More →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/id/500/300" alt="Slide Image 2" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Empowering Communities</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">EDUCATION FIRST</h2>
+                <p class="mainCarousel__slide--content-paragraph">Supporting educational initiatives to create opportunities for underprivileged children.</p>
+                <a href="#" class="button">Learn More →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/336/345" alt="Slide Image 3" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Environmental Stewardship</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">GREEN FUTURE</h2>
+                <p class="mainCarousel__slide--content-paragraph">Implementing sustainable practices to protect our environment for future generations.</p>
+                <a href="#" class="button">Explore →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/436/354" alt="Slide Image 4" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Healthcare Initiatives</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">WELLNESS FOR ALL</h2>
+                <p class="mainCarousel__slide--content-paragraph">Providing access to quality healthcare services in underserved areas.</p>
+                <a href="#" class="button">Discover →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/536/359" alt="Slide Image 2" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Rural Development</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">BRIDGING THE GAP</h2>
+                <p class="mainCarousel__slide--content-paragraph">Fostering economic growth and infrastructure development in rural communities.</p>
+                <a href="#" class="button">See Impact →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/536/254" alt="Slide Image 2" class="mainCarousel__slide--image">
+            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Women Empowerment</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">EQUAL OPPORTUNITIES</h2>
+                <p class="mainCarousel__slide--content-paragraph">Supporting initiatives that promote gender equality and women's empowerment.</p>
+                <a href="#" class="button">Join Us →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__slide" >
+            <img src="https://picsum.photos/436/354" alt="Slide Image 2" class="mainCarousel__slide--image">            <div class="mainCarousel__slide--content">
+                <h1 class="mainCarousel__slide--content-topHeading"><em>Digital Inclusion</em></h1>
+                <h2 class="mainCarousel__slide--content-mainHeading">CONNECTING LIVES</h2>
+                <p class="mainCarousel__slide--content-paragraph">Bridging the digital divide to ensure access to technology for all.</p>
+                <a href="#" class="button">Get Involved →</a>
+            </div>
+        </div>
+        <div class="mainCarousel__navigation">
+            <button class="mainCarousel__navigation--nav-button" onclick="changeSlide(-1)">←</button>
+            <div class="mainCarousel__navigation--dots">
+                <span class="mainCarousel__navigation--dots-dot active" onclick="goToSlide(0)">1</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(1)">2</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(2)">3</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(3)">4</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(4)">5</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(5)">6</span>
+                <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(6)">7</span>
+            </div>
+            <button class="mainCarousel__navigation--nav-button" onclick="changeSlide(1)">→</button>
+        </div>
+    </div>
+
+    <!-- component 3 -->
+    <div class="splitSection">
+        <div class="splitSection__image">
+            <img src="./assets/component3a.png" alt="splitSection">
+        </div>
+        <div class="splitSection__content">
+            <div class="splitSection__content--headings">
+                <h1 class="splitSection__content--headings--one">Our journey of</h1>
+                <h2 class="splitSection__content--headings--two">COMPASSION AND CHANGE</h2>
+            </div>
+            <p  class="splitSection__content--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+            <a href="#" class="splitSection__content--btn">Know More →</a>
+        </div>
+    </div>
+
+ 
+<!-- component 5 -->
+ <!-- <div class="component5">
+    <h1 class='component5__subHeader'>Our Journey of</h1>
+    <h2 class="component5__headingMain">OUR PILLARS OF CHANGE</h2>
+    
+    <p class="middle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .</p>
+    
+    <div class="main-content">
+        <div class="main-image">
+            <img src="./assets/women.jpg" alt="Group photo of women in blue uniforms">
+        </div>
+        <div class="content">
+            <h3>Holistic Rural Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            <p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            <a href="#" class="cta-button">View Our CSR Programs →</a>
+        </div>
+    </div>
+    
+  
+    <div class="image-gallery">
+        <div class="gallery-items-wrapper">
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 1">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 2">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 3">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 4">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 5">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 6">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 7">
+                <p>Sustainable Environment & Water Stewardship</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <button class="navigation__nav-button navigation__nav-button--prev">←</button>
+        <button class="navigation__nav-button navigation__nav-button--next">→</button>
+    </div>
+    
+</div> -->
+
+
+<div class="contentSection">
+    <h1 class='contentSection__subHeader'>Our Journey of</h1>
+    <h2 class="contentSection__headingMain">OUR PILLARS OF CHANGE</h2>
+    <p class="contentSection__middleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .</p>
+    <div class="contentSection__content">
+        <div class="contentSection__content--image-wrapper">
+            <img class="image" src="./assets/women.jpg" alt="Group photo of women in blue uniforms">
+        </div>
+        <div class="contentSection__content--data-wrapper">
+            <h3 class="contentSection__content--data-wrapper__heading">Holistic Rural Development</h3>
+            <p class="contentSection__content--data-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            <p class="contentSection__content--data-wrapper__paragraph">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+            <a href="#" class="cta-button">View Our CSR Programs →</a>
+        </div>
+    </div>
+    
+  
+    <div class="contentSection__imageGallery">
+        <div class="gallery-items-wrapper">
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 1"  class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 2" class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 3 " class='gallery-item__image' >
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 4 " class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 5 " class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 6 " class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/women.jpg" alt="Group photo 7 " class='gallery-item__image'>
+                <p class='gallery-item__caption'>Sustainable Environment & Water Stewardship</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contentSection__navigation">
+        <button class="contentSection__navigation--nav-button navigation__nav-button--prev">←</button>
+        <button class="contentSection__navigation--nav-button navigation__nav-button--next">→</button>
+    </div>
+    
+</div>
+
+
+
+<!-- core values  -->
+
+
+<div class="core-values-section">
+    <div class="core-content">
+        <h4 class="core-heading1">How we approach CSR</h4>
+        <h1 class="core-heading2">OUR CORE VALUES</h1>
+        <div class="values-grid">
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="core-image-container">
+        <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="Hands holding moss" class="csr-image">
+    </div>
+</div>
+
+
+
+
+<!-- <div class="dualLayoutSection">
+    <div class="dualLayoutSection__content">
+        <h4 class="dualLayoutSection__content--subheading">How we approach CSR</h4>
+        <h1 class="dualLayoutSection__content--heading">OUR CORE VALUES</h1>
+        <div class="dualLayoutSection__content--grid">
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <img src="./assets/coreVector.png" alt="icon" class="icon">
+                <div class="text">
+                    <h2>OUR MISSION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dualLayoutSection__container">
+        <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="Hands holding moss" class="csr-image">
+    </div>
+</div> -->
+
+
+<!-- component 6  -->
+<!-- <div class="container">
+    <div class="header">
+        <h1>RECENT HIGHLIGHTS</h1>
+        <h2>Building a bright future</h2>
+    </div>
+    
+    <div class="item row1">
+        <div class="item-inner">
+            <div class="item-front">
+                <img src="https://picsum.photos/536/354" alt="Healthcare">
+            </div>
+            <div class="item-back">
+                <h3>Healthcare Impact</h3>
+                <p>Our healthcare initiatives have reached over 100 rural villages, providing essential medical services to thousands of people.</p>
+            </div>
+        </div>
+    </div>
+    <div class="item row1 ">
+        <div class="item-inner">
+            <div class="item-front">
+                <img src="https://picsum.photos/536/354" alt="Education">
+                <div class="item-content">
+                    <p>Empowering youth through education</p>
+                </div>
+            </div>
+            <div class="item-back">
+                <h3>Education Progress</h3>
+                <p>We've established 50 new schools and improved literacy rates by 25% in underprivileged areas.</p>
+            </div>
+        </div>
+    </div>
+    <div class=" achievement text-card">
+        <div class="item-content">
+            <h3>Key Achievement 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+        </div>
+    </div>
+    <div class="item ">
+        <div class="item-inner">
+            <div class="item-front">
+                <img src="https://picsum.photos/536/354" alt="Sports">
+                <div class="item-content">
+                    <p>Celebrating sports achievements</p>
+                </div>
+            </div>
+            <div class="item-back">
+                <h3>Sports Excellence</h3>
+                <p>Our athletes have won 15 medals in international competitions, inspiring a new generation of sports enthusiasts.</p>
+            </div>
+        </div>
+    </div>
+    <div class="item card5">
+        <div class="item-inner">
+            <div class="item-front">
+                <img src="https://picsum.photos/536/354" alt="Community">
+                <div class="item-content">
+                    <p>Community development projects</p>
+                </div>
+            </div>
+            <div class="item-back">
+                <h3>Community Growth</h3>
+                <p>We've initiated 30 community development projects, improving infrastructure and quality of life for over 50,000 people.</p>
+            </div>
+        </div> 
+    </div>
+    <div class="item card6">
+        <div class="item-inner">
+            <div class="item-front">
+                <img src="https://picsum.photos/536/354" alt="Women Empowerment">
+                <div class="item-content">
+                    <p>Empowering women through sports</p>
+                </div>
+            </div>
+            <div class="item-back">
+                <h3>Women in Sports</h3>
+                <p>Our women's sports programs have seen a 200% increase in participation, breaking barriers and setting new records.</p>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="item row3-1">
+            <div class="item-inner">
+                <div class="item-front">
+                    <img src="https://picsum.photos/536/354" alt="Healthcare">
+                    <div class="item-content">
+                        <p>Healthcare initiatives reaching rural areas</p>
+                    </div>
+                </div>
+                <div class="item-back">
+                    <h3>Healthcare Impact</h3>
+                    <p>Our healthcare initiatives have reached over 100 rural villages, providing essential medical services to thousands of people.</p>
+                </div>
+            </div>
+        </div>
+        
+</div>  -->
+
+
+<div class="mainDiv">
+    <div class="upperDiv">
+        <div class="upperDivLeft">
+            <div class="upperDivLeftTop">
+                <div class="upperDivLeftTopLeft"></div>
+                <div class="upperDivLeftTopRight"></div>
+            </div>
+            <div class="upperDivLeftBottom">
+                <div class="upperDivLeftBottomLeft"></div>
+                <div class="upperDivLeftBottomRight"></div>
+            </div>
+        </div>
+        <div class="upperDivRight">
+            <div class="upperDivRightTop"></div>
+            <div class="upperDivRightBottom"></div>
+        </div>
+    </div>
+    
+    <div class="lowerDiv">
+        <div class="lowerDiv1"></div>
+        <div class="lowerDiv2"></div>
+    </div>
+
+</div>
+
+
+<!-- awards component  -->
+<!-- <section class="awards">
+    <div class="awards__header">
+      <h2 class="awards__title">Recognizing our impacts</h2>
+      <h3 class="awards__subtitle">AWARDS AND ACCOLADES</h3>
+    </div>
+    <div class="awards__content">
+      <div class="awards__row awards__row--top">
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+        <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+      </div>
+      <div class="awards__row awards__row--bottom">
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+        <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+            <div class="awards__details">
+              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+              <p class="awards__description">for the category Promoting Education</p>
+            </div>
+          </div>
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+        <div class="awards__item">
+          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
+          <div class="awards__details">
+            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
+            <p class="awards__description">for the category Promoting Education</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="awards__footer">
+      <a href="#" class="awards__view-all">View All Awards</a>
+    </div>
+  </section> -->
+
+
+
+  <div class="container8">
+    <h1>Meet the face behind the impact</h1>
+    <h2>SUCCESS STORIES</h2>
+    <div class="carousel">
+        <div class="profile">
+            <img src="https://picsum.photos/536/354" alt="Jennifer Christopher" class="profile-image">
+            <div class="name">Jennifer </div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+        <div class="profile active">
+            <img src="https://picsum.photos/536/354" alt="Jennifer Christopher" class="profile-image">
+            <div class="name">Jennifer Christopher</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+        <div class="main-profile">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Venkata Narasimharajuvaripeta" class="profile-image">
+            <div class="name main-name">Venkata Narasimharajuvaripeta</div>
+            <div class="title">Paralympics Gold Medalist</div>
+        </div>
+        <div class="profile active">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Jennifer Christopher" class="profile-image">
+            <div class="name">Christopher</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+        <div class="profile">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Jennifer Christopher" class="profile-image">
+            <div class="name">njdjfcbw jncjd</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+    <div class=" navigation-buttonn">
+        <button class="nav-buttonn">&#8249;</button>
+        <button class="nav-buttonn">&#8250;</button>
+    </div>
+</div>
+<div class="carouselContainer">
+    <h1 class="carouselContainer__subheading">Meet the face behind the impact</h1>
+    <h2 class="carouselContainer__mainheading">SUCCESS STORIES</h2>
+    <div class="carouselContainer__carousel">
+        <div class="carouselContainer__carousel--profile">
+            <img src="https://picsum.photos/536/354" alt="Jennifer Christopher" class="profile-image">
+            <div class="carouselContainer__carousel--profile-name">Jennifer </div>
+            <div class="carouselContainer__carousel--profile-title">Recharging Water and Lives</div>
+        </div>
+        <div class="carouselContainer__carousel--profile active">
+            <img src="https://picsum.photos/536/354" alt="Jennifer Christopher" class="profile-image">
+            <div class="carouselContainer__carousel--profile-name">Jennifer Christopher</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+        <div class="carouselContainer__carousel--main-profile">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Venkata Narasimharajuvaripeta" class="profile-image">
+            <div class="carouselContainer__carousel--profile-name main-name">Venkata Narasimharajuvaripeta</div>
+            <div class="title">Paralympics Gold Medalist</div>
+        </div>
+        <div class="carouselContainer__carousel--profile active">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Jennifer Christopher" class="profile-image">
+            <div class="carouselContainer__carousel--profile-name">Christopher</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+        <div class="carouselContainer__carousel--profile">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Jennifer Christopher" class="profile-image">
+            <div class="carouselContainer__carousel--profile-name">njdjfcbw jncjd</div>
+            <div class="title">Recharging Water and Lives</div>
+        </div>
+    </div>
+    <p class="carouselContainer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+    <div class="carouselContainer__navigation-button">
+        <button class="carouselContainer__navigation-button--nav-buttonn">&#8249;</button>
+        <button class="carouselContainer__navigation-button--nav-buttonn">&#8250;</button>
+    </div>
+</div>
+
+
+
+
+<div class="contactSection">
+    <div class="contactSection__leftsection">
+        <h2 class="contactSection__leftsection--subheading">Want to collaborate?</h2>
+        <h1 class="contactSection__leftsection--heading">CONNECT WITH US</h1>
+        <p class="contactSection__leftsection--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+        <div class="contactSection__leftsection--contactInfo">
+            <div class="contactSection__leftsection--contactInfo-content">
+                <i class="fas fa-handshake icon"></i>
+                <span class="mails">Business: <span class="email">business@company.com</span></span>
+            </div>
+            <div class="contactSection__leftsection--contactInfo-content">
+                <i class="fas fa-handshake icon"></i>
+                <span class="mails">Business: <span class="email">business@company.com</span></span>
+            </div>
+            <div class="contactSection__leftsection--contactInfo-content">
+                <i class="fas fa-handshake icon"></i>
+                <span class="mails">Business: <span class="email">business@company.com</span></span>
+            </div>
+            <!-- <div>
+                <i class="fas fa-handshake"></i>
+                <span>Business: <span class="email">business@company.com</span></span>
+            </div>
+            <div>
+                <i class="fas fa-handshake"></i>
+                <span>Business: <span class="email">business@company.com</span></span>
+            </div> -->
+        </div>
+        <div class="contactSection__leftsection--socialIcons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+    <div class="contactSection__rightSection">
+        <div class="contactSection__rightSection--top">
+            <div class="contactSection__rightSection--top-name">
+                <label class="label" for="name">Name</label>
+                <input type="text" placeholder="eg., Venkata Narasimharajuvaripeta" name="name">
+            </div>
+            <div class="contactSection__rightSection--top-mobile">
+                <label class="label" for="number">Mobile Number</label>
+                <input type="number" placeholder="eg., 9786575437" name="mobile">
+            </div>
+        </div>
+        <div class="contactSection__rightSection--middle">
+            <div class="contactSection__rightSection--middle-email">
+                <label class="label"  for="email"> Email Address</label>
+                <input type="email" placeholder="eg., abc@gmail.com" name="email">
+            </div>
+            <div class="contactSection__rightSection--middle-company">
+                <label class="label" for="company">Company</label>
+                <select id="company" name="company">
+                    <option>Select Option</option>
+                    <option>One</option>
+                    </select>
+            </div>
+        </div>
+        <div class="contactSection__rightSection--bottom">
+            <div class="contactSection__rightSection--bottom-text">
+                <label class="label" for="message">Message</label>
+                <textarea placeholder="Type your message here..." name="message" class="textarea"></textarea>
+            </div>
+            <div class="contactSection__rightSection--bottom-checkboxContainer">
+                <input type="checkbox" name="agree">
+                <span class="checkboxContainer__span">I agree that even if my contact number is registered with NDNC / NCPR, I would still want the Company to contact...<a href="#" style="color: #ff7f00;">Read More</a></span>
+            </div>
+        </div>
+        <button class="contactSection__rightSection--button">Know More <i class="fas fa-arrow-right"></i></button> 
+
+     
+    </div>
+</div>
+
+
+
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const navButtons = document.querySelectorAll('.nav-button');
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Navigation functionality would be implemented here');
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

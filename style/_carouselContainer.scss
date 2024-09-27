@@ -1,0 +1,119 @@
+@import "_variables";
+
+.carouselContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+  &__subheading {
+    color: $color3;
+    font-size: 24px;
+    margin-bottom: 0;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+  }
+  &__mainheading {
+    color: $color2;
+    font-size: 36px;
+    margin-top: 5px;
+
+    @media screen and (max-width:768px) {
+        font-size: 36px;
+    }
+  }
+  &__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+
+    &--profile {
+      width: 200px;
+      margin: 0 10px;
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid $color9;
+
+        @media screen and (max-width: 768px) {
+            max-width: 400px;
+        }
+    }
+    &-name {
+        font-weight: bold;
+        margin-top: 10px;
+        
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+        
+    }
+    &-title {
+        font-size: 14px;
+        color:$color3;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+&--main-profile {
+    width: 300px;
+    margin: 0 20px;
+    .profile-image {
+        width: 300px;
+        height: 300px;
+    }
+}
+}
+&__description {
+    // max-width: 800px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: $color3;
+    line-height: 1.5;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+  }
+  &__navigation-button {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    &--nav-buttonn {
+      background-color: $color4;
+      border: none;
+      color: $color1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width:768px) {
+    max-width: 700px;
+  }
+}
+.main-name {
+  color: $color4;
+}
+
+

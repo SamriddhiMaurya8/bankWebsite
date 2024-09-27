@@ -1,0 +1,272 @@
+@import '_variables' ; 
+
+
+.contactSection{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    
+    flex-wrap: wrap;
+
+    padding: 7rem;
+    background-color:#FFF5EB;
+
+    &__leftsection{
+        width: 45%;
+        margin: 10px 0;
+
+        &--subheading{
+            font-size: 24px;
+            color:$color3;
+            font-style: italic;
+
+            @media(max-width: 768px){
+                font-size: 20px;
+            }
+        }
+        &--heading{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: $color2;
+            margin: 10px 0;
+            @media(max-width: 768px){
+                font-size: 36px;
+            }
+        }
+        &--paragraph{
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            @media(max-width: 768px){
+                font-size: 14px;
+            }
+        }
+        &--contactInfo{
+            margin-top: 20px;
+            &-content{
+                display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .icon{
+                font-size: 24px;
+                color: $color4;
+                margin-right: 10px;
+
+                @media(max-width: 768px){
+                    font-size: 20px;
+                }
+            }
+            .mails{
+                font-size: 16px;
+                color: $color3;
+                .email{
+                    font-weight: bold;
+
+                }
+
+                @media(max-width: 768px){
+                    font-size: 14px;
+                }
+            }
+            }
+        }
+        &--socialIcons{
+            margin-top: 20px;
+            .fab{
+                font-size: 24px;
+                color: $color3;
+                margin-right: 10px;
+
+                @media(max-width: 768px){
+                    font-size: 20px;
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+    
+    &__rightSection{
+        width: 45%;
+        margin: 10px 0;
+        background-color: #4b2e1e;
+            padding: 10px;
+            border-radius: 10px;
+            color: $color1;
+
+
+
+
+
+            &--top{
+                display: flex;
+                gap: 2rem;
+                &-name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 1rem;
+                    input{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                        @media screen and (max-width: 768px) {
+                            width: 16vw;
+                        }
+                       
+                    }
+                    
+                }
+                &-mobile{
+                    display: flex;
+                    flex-grow: 0;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // margin-left: 2rem;
+                    input{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+
+                        @media screen and (max-width: 768px) {
+                            width: 14vw;
+                        }
+                       
+                    }
+                }
+
+                @media screen and (max-width:768px){
+                    gap: 1rem;
+                }
+            }
+            &--middle{
+                display: flex;
+                gap: 2rem;
+                &-email {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 1rem;
+                    input{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+
+                        @media screen and (max-width: 768px) {
+                            width: 16vw;
+                        }
+                    }
+                }
+               
+                &-company{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // margin-left: 2rem;
+                    select{
+                        width: 16vw;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+
+
+                         @media screen and (max-width: 768px) {
+                            width: 19vw;
+                        }
+                    }
+                   
+                    
+                }
+
+                 @media  screen and (max-width:768px){
+                    gap: 1rem;
+                 }
+            }
+
+            &--bottom{
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 1rem;
+                    .textarea{
+                        
+                            width: 32.4vw;
+                            // padding: 10px;
+                            height: 15vh;
+                            margin-bottom: 10px;
+                            border: none;
+                            border-radius: 5px;
+
+                            @media screen and (max-width: 768px) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &-checkboxContainer{
+                    display: flex;
+                    padding: 10px;
+                    gap: 10px;
+                    &__span{
+                        font-size: 2rem;
+
+                        @media screen and (min-width:768px){
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+           
+
+
+
+
+
+
+
+         
+         
+            &--button{
+            background-color: #ff7f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-left: 18px;
+
+            .fa-arrow-right{
+                margin-left: 10px;
+            }
+            }
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+   
+        }
+
+
+         @media screen and (max-width:768px) {
+            flex-direction: column;
+         }
+}
+
+
+.label{
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    
+}

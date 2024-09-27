@@ -1,0 +1,76 @@
+@import '_variables' ; 
+.sub-header {
+    height: 50px;
+    padding: 0 160px 0 160px;
+    &__content {
+      .indus-logo {
+        height: 40px;
+  
+        @media screen and (max-width:500px) {
+          width: 115px;
+          height: 20px;
+          margin-top: 17px;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+      &--right {
+        display: flex;
+        gap: 23px;
+  
+        .email-div{
+          margin-bottom: 23px;
+        }
+        i {
+          margin-top: 12px;
+        }
+      }
+    }
+  
+  @media screen and (max-width:500px) {
+  width:  (20rem);
+  height:  (50px);
+  padding: 0px 16px 0px 16px;
+  justify: space-between;
+  }
+  }
+  .sub-header-two {
+    height: (92px);
+    padding: 16px 160px 16px 160px;
+    gap: 0px;
+    justify-content: space-between;
+    opacity: 0px;
+    background-color: $color7;
+  
+    &__content {
+      .logo-img {
+        margin-top: 17px;
+  
+      }
+      display: flex;
+      justify-content: space-between;
+      i {
+        width: 56px;
+        height: 37px;
+        margin-top: 25px;
+        color: $color1;
+        @media screen and (max-width:500px) {
+          
+          margin-bottom: 10px;
+                  }
+      }
+    }
+  
+    @media screen and (max-width: 500px) {
+      width: 19rem;
+      height:50px;
+      padding: 0px 46px 0px 46px;
+      justify: space-between;
+  
+      .logo-img{
+          width: 86px;
+          height: 40px;
+      }
+    }
+  }
+  

@@ -1,0 +1,62 @@
+@import '_variables' ; 
+
+.dualLayoutSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+  background-color: rgb(42, 40, 40);
+
+  &__content {
+    flex: 1;
+    padding-left: 70px;
+    padding-bottom: 40px;
+
+    &--subheading {
+      font-size: 50px;
+      color: $color1;
+      margin-bottom: 20px;
+    }
+
+    &--heading {
+      font-size: 24px;
+      color: $color8 ; 
+      margin-bottom: 10px;
+    }
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+
+      .value-item {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+          width: 50px;
+          margin-right: 20px;
+        }
+        &__text {
+          &--heading {
+            color: #eee;
+            font-size: 20px;
+          }
+          &--paragraph {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #aaa;
+          }
+        }
+      }
+    }
+  }
+  &__container {
+    flex: 1;
+    position: relative;
+    .csr-image {
+      max-width: 100%;
+      clip-path: circle(50% at right);
+      height: 100%;
+    }
+  }
+}
