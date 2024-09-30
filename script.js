@@ -1,6 +1,6 @@
 
 
-let currentSlide = 0;
+let index = 0;
 const galleryItemsWrapper = document.querySelector('.gallery-items-wrapper');
 const galleryItems = document.querySelectorAll('.gallery-item');
 const totalSlides = Math.ceil(galleryItems.length / 4); 
@@ -9,25 +9,25 @@ const nextButton = document.querySelector('.navigation__nav-button--next');
 
 
 function updateButtonState() {
-    prevButton.disabled = currentSlide === 0; 
-    nextButton.disabled = currentSlide === totalSlides - 1; 
+    prevButton.disabled = index === 0; 
+    nextButton.disabled = index === totalSlides - 1; 
 }
 
 
 updateButtonState();
 
 prevButton.addEventListener('click', function() {
-    if (currentSlide > 0) {
-        currentSlide--;
-        galleryItemsWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    if (index > 0) {
+        index--;
+        galleryItemsWrapper.style.transform = `translateX(-${index * 100}%)`;
         updateButtonState(); // Update button state after changing slide
     }
 });
 
 nextButton.addEventListener('click', function() {
-    if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        galleryItemsWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    if (index < totalSlides - 1) {
+        index++;
+        galleryItemsWrapper.style.transform = `translateX(-${index * 100}%)`;
         updateButtonState(); 
     }
 });
@@ -55,88 +55,131 @@ galleryImages.forEach(image => {
 
 
 
-// component 8 
+// // component 8 
 
+
+// // // Select elements
+// // const profiles = document.querySelectorAll('.profile');
+// // const mainProfile = document.querySelector('.main-profile');
+// // const navButtons = document.querySelectorAll('.nav-buttonn');
+
+// // let currentIndex = 0; // Current index for the profiles
+
+// // // Function to handle right navigation
+// // function shiftRight() {
+// //     // Get current main profile details
+// //     const mainImageSrc = mainProfile.querySelector('.profile-image').src;
+// //     const mainName = mainProfile.querySelector('.main-name').textContent;
+// //     const mainTitle = mainProfile.querySelector('.title').textContent;
+
+// //     // Update main profile with the next profile in the list
+// //     const nextProfile = profiles[currentIndex];
+// //     mainProfile.querySelector('.profile-image').src = nextProfile.querySelector('.profile-image').src;
+// //     mainProfile.querySelector('.main-name').textContent = nextProfile.querySelector('.name').textContent;
+// //     mainProfile.querySelector('.title').textContent = nextProfile.querySelector('.title').textContent;
+
+// //     // Update the profile to the left with the previous main profile content
+// //     nextProfile.querySelector('.profile-image').src = mainImageSrc;
+// //     nextProfile.querySelector('.name').textContent = mainName;
+// //     nextProfile.querySelector('.title').textContent = mainTitle;
+
+// //     // Update the index to shift the carousel
+// //     currentIndex = (currentIndex + 1) % profiles.length; // Cycle through profiles
+// // }
+
+// // // Add event listener to the right nav button
+// // navButtons[1].addEventListener('click', shiftRight);
 
 // // Select elements
+
+
+
+
+
+
 // const profiles = document.querySelectorAll('.profile');
 // const mainProfile = document.querySelector('.main-profile');
 // const navButtons = document.querySelectorAll('.nav-buttonn');
 
-// let currentIndex = 0; // Current index for the profiles
+// let currentIndex = 0;
 
-// // Function to handle right navigation
-// function shiftRight() {
-//     // Get current main profile details
-//     const mainImageSrc = mainProfile.querySelector('.profile-image').src;
-//     const mainName = mainProfile.querySelector('.main-name').textContent;
-//     const mainTitle = mainProfile.querySelector('.title').textContent;
+// function swapContent(profile1, profile2) {
+//     const profile1ImageSrc = profile1.querySelector('.profile-image').src;
+//     const profile1Name = profile1.querySelector('.main-name, .name').textContent;
+//     const profile1Title = profile1.querySelector('.title').textContent;
 
-//     // Update main profile with the next profile in the list
-//     const nextProfile = profiles[currentIndex];
-//     mainProfile.querySelector('.profile-image').src = nextProfile.querySelector('.profile-image').src;
-//     mainProfile.querySelector('.main-name').textContent = nextProfile.querySelector('.name').textContent;
-//     mainProfile.querySelector('.title').textContent = nextProfile.querySelector('.title').textContent;
+//     profile1.querySelector('.profile-image').src = profile2.querySelector('.profile-image').src;
+//     profile1.querySelector('.main-name, .name').textContent = profile2.querySelector('.name').textContent;
+//     profile1.querySelector('.title').textContent = profile2.querySelector('.title').textContent;
 
-//     // Update the profile to the left with the previous main profile content
-//     nextProfile.querySelector('.profile-image').src = mainImageSrc;
-//     nextProfile.querySelector('.name').textContent = mainName;
-//     nextProfile.querySelector('.title').textContent = mainTitle;
-
-//     // Update the index to shift the carousel
-//     currentIndex = (currentIndex + 1) % profiles.length; // Cycle through profiles
+//     profile2.querySelector('.profile-image').src = profile1ImageSrc;
+//     profile2.querySelector('.name').textContent = profile1Name;
+//     profile2.querySelector('.title').textContent = profile1Title;
 // }
 
-// // Add event listener to the right nav button
-// navButtons[1].addEventListener('click', shiftRight);
+// function shiftProfile(direction) {
 
-// Select elements
-
-
-
-
-
-
-const profiles = document.querySelectorAll('.profile');
-const mainProfile = document.querySelector('.main-profile');
-const navButtons = document.querySelectorAll('.nav-buttonn');
-
-let currentIndex = 0;
-
-function swapContent(profile1, profile2) {
-    const profile1ImageSrc = profile1.querySelector('.profile-image').src;
-    const profile1Name = profile1.querySelector('.main-name, .name').textContent;
-    const profile1Title = profile1.querySelector('.title').textContent;
-
-    profile1.querySelector('.profile-image').src = profile2.querySelector('.profile-image').src;
-    profile1.querySelector('.main-name, .name').textContent = profile2.querySelector('.name').textContent;
-    profile1.querySelector('.title').textContent = profile2.querySelector('.title').textContent;
-
-    profile2.querySelector('.profile-image').src = profile1ImageSrc;
-    profile2.querySelector('.name').textContent = profile1Name;
-    profile2.querySelector('.title').textContent = profile1Title;
-}
-
-function shiftProfile(direction) {
-
-    const nextIndex = (currentIndex + direction) % profiles.length;
+//     const nextIndex = (currentIndex + direction) % profiles.length;
     
    
-    swapContent(mainProfile, profiles[nextIndex]);
+//     swapContent(mainProfile, profiles[nextIndex]);
 
-    for (let i = 0; i < profiles.length; i++) {
-        const profileToSwap = profiles[(nextIndex + i) % profiles.length];
-        const nextProfile = profiles[(nextIndex + i + direction + profiles.length) % profiles.length];
-        swapContent(profileToSwap, nextProfile);
-    }
+//     for (let i = 0; i < profiles.length; i++) {
+//         const profileToSwap = profiles[(nextIndex + i) % profiles.length];
+//         const nextProfile = profiles[(nextIndex + i + direction + profiles.length) % profiles.length];
+//         swapContent(profileToSwap, nextProfile);
+//     }
 
 
-    currentIndex = nextIndex;
-}
+//     currentIndex = nextIndex;
+// }
 
-navButtons[1].addEventListener('click', () => shiftProfile(1));  
-navButtons[0].addEventListener('click', () => shiftProfile(-1)); 
+// navButtons[1].addEventListener('click', () => shiftProfile(1));  
+// navButtons[0].addEventListener('click', () => shiftProfile(-1)); 
 
+
+
+
+
+// const profiles = document.querySelectorAll('.carouselContainer__carousel--profile');
+// const mainProfile = document.querySelector('.carouselContainer__carousel--main-profile');
+// const arrowButtons = document.querySelectorAll('.carouselContainer__navigation-button--nav-buttonn');
+
+// let currentIndex = 0;
+
+// function swapContent(profile1, profile2) {
+//     const profile1ImageSrc = profile1.querySelector('.profile-image').src;
+//     const profile1Name = profile1.querySelector('.main-name, .carouselContainer__carousel--profile-name').textContent;
+//     const profile1Title = profile1.querySelector('.title').textContent;
+
+//     profile1.querySelector('.profile-image').src = profile2.querySelector('.profile-image').src;
+//     profile1.querySelector('.main-name, .carouselContainer__carousel--profile-name').textContent = profile2.querySelector('.name').textContent;
+//     profile1.querySelector('.title').textContent = profile2.querySelector('.title').textContent;
+
+//     profile2.querySelector('.profile-image').src = profile1ImageSrc;
+//     profile2.querySelector('.carouselContainer__carousel--profile-name').textContent = profile1Name;
+//     profile2.querySelector('.title').textContent = profile1Title;
+// }
+
+// function shiftProfile(direction) {
+
+//     const nextIndex = (currentIndex + direction) % profiles.length;
+    
+   
+//     swapContent(mainProfile, profiles[nextIndex]);
+
+//     for (let i = 0; i < profiles.length; i++) {
+//         const profileToSwap = profiles[(nextIndex + i) % profiles.length];
+//         const nextProfile = profiles[(nextIndex + i + direction + profiles.length) % profiles.length];
+//         swapContent(profileToSwap, nextProfile);
+//     }
+
+
+//     currentIndex = nextIndex;
+// }
+
+// arrowButtons[1].addEventListener('click', () => shiftProfile(1));  
+// arrowButtons[0].addEventListener('click', () => shiftProfile(-1)); 
 
 
 

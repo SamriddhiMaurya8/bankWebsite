@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<!-- carousel-top  -->
- 
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- carousel-top  -->
 
-
-
-<!-- header -->
-
-    <div class="sub-header">
+    <!-- header -->
+    <div class="Topheader">
+     <div class="sub-header">
         <div class="sub-header__content">
             <img class="indus-logo" src="./assets/IndusIndBankLogo.png" alt="logo">
             <div class="sub-header__content--right">
                <div class="email-div">
-                <p>abc@gmail.com</p>
+               <img class="email-div__logo" src="./assets/email.png" alt="email"></img>
+                <p class="email-div__desc">abc@gmail.com</p>
                </div>
                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -33,11 +37,10 @@
         <i class="fa-solid fa-bars" ></i>
        </div>
     </div>
+</div> 
 
-
-
-<!-- main -carousel  -->
-    <div class="mainCarousel">
+    <!-- main -carousel  -->
+     <div class="mainCarousel">
         <div class="mainCarousel__slide active">
             <img src="https://picsum.photos/536/354" alt="Slide Image 1" class="mainCarousel__slide--image">
             <div class="mainCarousel__slide--content">
@@ -113,10 +116,11 @@
             </div>
             <button class="mainCarousel__navigation--nav-button" onclick="changeSlide(1)">→</button>
         </div>
-    </div>
+    </div>   
 
     <!-- component 3 -->
-    <div class="splitSection">
+    <!-- this is ok section  -->
+     <div class="splitSection">
         <div class="splitSection__image">
             <img src="./assets/component3a.png" alt="splitSection">
         </div>
@@ -128,11 +132,116 @@
             <p  class="splitSection__content--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
             <a href="#" class="splitSection__content--btn">Know More →</a>
         </div>
-    </div>
+    </div>   
 
- 
-<!-- component 5 -->
- <!-- <div class="component5">
+    <!-- componnet 4  ripple -->
+
+    <!-- <div class="ripple-effect">
+      <div class="ripple-heading">
+        <p class="sub-title">Our growing impact</p>
+        <h1>A RIPPLE EFFECT</h1>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea.
+        </p>
+      </div>
+
+      <div class="ripple-carousel">
+        <div class="ripple-item">
+          <div class="circle">01</div>
+          <div class="ripple-text">
+            <h2>10%</h2>
+            <p>
+              10Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">02</div>
+          <div class="ripple-text">
+            <h2>20%</h2>
+            <p>
+              20 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">03</div>
+          <div class="ripple-text">
+            <h2>30%</h2>
+            <p>
+              30 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">04</div>
+          <div class="ripple-text">
+            <h2>100%</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">05</div>
+          <div class="ripple-text">
+            <h2>40%</h2>
+            <p>
+              40 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">05</div>
+          <div class="ripple-text">
+            <h2>50%</h2>
+            <p>
+              50 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+          <div class="circle">06</div>
+          <div class="ripple-text">
+            <h2>60%</h2>
+            <p>
+              60 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="ripple-item">
+            <div class="circle">08</div>
+            <div class="ripple-text">
+              <h2>80%</h2>
+              <p>
+                80Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+      </div>
+
+     
+      <div class="carousel-controls">
+        <button class="control-left">&larr;</button>
+        <button class="control-right">&rarr;</button>
+      </div>
+    </div> -->
+
+  
+    <!-- component 5 -->
+    <!-- this section is ok  -->
+    <!-- <div class="component5">
     <h1 class='component5__subHeader'>Our Journey of</h1>
     <h2 class="component5__headingMain">OUR PILLARS OF CHANGE</h2>
     
@@ -189,16 +298,15 @@
         <button class="navigation__nav-button navigation__nav-button--next">→</button>
     </div>
     
-</div> -->
+</div>  -->
 
-
-<div class="contentSection">
+     <div class="contentSection">
     <h1 class='contentSection__subHeader'>Our Journey of</h1>
     <h2 class="contentSection__headingMain">OUR PILLARS OF CHANGE</h2>
     <p class="contentSection__middleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .</p>
     <div class="contentSection__content">
         <div class="contentSection__content--image-wrapper">
-            <img class="image" src="./assets/women.jpg" alt="Group photo of women in blue uniforms">
+            <img class="image" src="./assets/awards.png" alt="Group photo of women in blue uniforms">
         </div>
         <div class="contentSection__content--data-wrapper">
             <h3 class="contentSection__content--data-wrapper__heading">Holistic Rural Development</h3>
@@ -247,73 +355,13 @@
         <button class="contentSection__navigation--nav-button navigation__nav-button--next">→</button>
     </div>
     
-</div>
+</div>     
 
-
-
-<!-- core values  -->
-
-
-<div class="core-values-section">
-    <div class="core-content">
-        <h4 class="core-heading1">How we approach CSR</h4>
-        <h1 class="core-heading2">OUR CORE VALUES</h1>
-        <div class="values-grid">
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-            <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="core-image-container">
-        <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="Hands holding moss" class="csr-image">
-    </div>
-</div>
-
-
-
-
-<!-- <div class="dualLayoutSection">
+    <!-- core values  -->
+    <!--/* perfect  */-->
+     <div class="dualLayoutSection">
     <div class="dualLayoutSection__content">
-        <h4 class="dualLayoutSection__content--subheading">How we approach CSR</h4>
+        <h4 class="dualLayoutSection__content--subheading"><em>How we approach CSR</em></h4>
         <h1 class="dualLayoutSection__content--heading">OUR CORE VALUES</h1>
         <div class="dualLayoutSection__content--grid">
             <div class="value-item">
@@ -324,38 +372,38 @@
                 </div>
             </div>
             <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
             <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
             <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
             <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
             <div class="value-item">
-                <img src="./assets/coreVector.png" alt="icon" class="icon">
-                <div class="text">
-                    <h2>OUR MISSION</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <img src="./assets/coreVector.png" alt="icon" class="value-item__icon">
+                <div class="value-item__text">
+                    <h2 class="value-item__text--heading">OUR MISSION</h2>
+                    <p class="value-item__text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
         </div>
@@ -363,11 +411,11 @@
     <div class="dualLayoutSection__container">
         <img src="https://picsum.photos/id/1084/536/354?grayscale" alt="Hands holding moss" class="csr-image">
     </div>
-</div> -->
+</div>  
 
-
-<!-- component 6  -->
-<!-- <div class="container">
+    <!-- gallery -->
+    <!-- component 6  -->
+    <!-- <div class="container">
     <div class="header">
         <h1>RECENT HIGHLIGHTS</h1>
         <h2>Building a bright future</h2>
@@ -463,10 +511,9 @@
             </div>
         </div>
         
-</div>  -->
+</div>     -->
 
-
-<div class="mainDiv">
+    <!-- <div class="mainDiv">
     <div class="upperDiv">
         <div class="upperDivLeft">
             <div class="upperDivLeftTop">
@@ -489,141 +536,104 @@
         <div class="lowerDiv2"></div>
     </div>
 
-</div>
+</div> -->
 
+    <!-- awarrds -->
+    <!-- perfect  -->
 
-<!-- awards component  -->
-<!-- <section class="awards">
-    <div class="awards__header">
-      <h2 class="awards__title">Recognizing our impacts</h2>
-      <h3 class="awards__subtitle">AWARDS AND ACCOLADES</h3>
+     <div class="cardsContainer">
+    <div class="cardsContainer__headings">
+      <div class="cardsContainer__headings--subheading">
+        <em>Recognising our impacts</em>
+      </div>
+      <div class="cardsContainer__headings--mainHeading">
+        AWARDS AND ACCOLADES
+      </div>
     </div>
-    <div class="awards__content">
-      <div class="awards__row awards__row--top">
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+
+    <div class="cardsContainer__cards">
+      <div class="cardsContainer__cards--wrapper">
+        <div class="cardsContainer__cards--wrapper-itemLeft item1">
+          <div class="cardsContainer__cards--wrapper-itemLeft-content">
+            <h4 class="cardsContainer__cards--wrapper-itemLeft-content__boldText">CSR Journel Excellence Awards</h4>
+            <p class="cardsContainer__cards--wrapper-itemLeft-content__basicText">for the category promoting education</p>
           </div>
         </div>
-        <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+        <div class="cardsContainer__cards--wrapper-itemLeft item2">
+          <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemLeft__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemLeft item3">
+          <div class="cardsContainer__cards--wrapper-itemLeft-content">
+            <h4 class="cardsContainer__cards--wrapper-itemLeft-content__boldText">CSR Journel Excellence Awards</h4>
+            <p class="cardsContainer__cards--wrapper-itemLeft-content__basicText">for the category promoting education</p>
           </div>
         </div>
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+        <div class="cardsContainer__cards--wrapper-itemLeft item4">
+          <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemLeft__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemLeft item5">
+          <div class="cardsContainer__cards--wrapper-itemLeft-content">
+            <h4 class="cardsContainer__cards--wrapper-itemLeft-content__boldText">CSR Journel Excellence Awards</h4>
+            <p class="cardsContainer__cards--wrapper-itemLeft-content__basicText">for the category promoting education</p>
           </div>
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemLeft item6">
+          <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemLeft__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemLeft item7">
+          <div class="cardsContainer__cards--wrapper-itemLeft-content">
+            <h4 class="cardsContainer__cards--wrapper-itemLeft-content__boldText">CSR Journel Excellence Awards</h4>
+            <p class="cardsContainer__cards--wrapper-itemLeft-content__basicText">for the category promoting education</p>
+          </div>
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemLeft item8">
+          <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemLeft__images" alt="awards">
         </div>
       </div>
-      <div class="awards__row awards__row--bottom">
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+      <div class="cardsContainer__cards--wrapper">
+        <div class="cardsContainer__cards--wrapper-itemRight item1">
+            <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemRight__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemRight item2">
+          <div class="cardsContainer__cards--wrapper-itemRight-content">
+            <h4 class="cardsContainer__cards--wrapper-itemRight-content__boldText">CSR Journel Excellence Awards</h4>
+            <p class="cardsContainer__cards--wrapper-itemRight-content__basicText">for the category promoting education</p>
           </div>
         </div>
-        <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-          <div class="awards__item">
-            <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-            <div class="awards__details">
-              <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-              <p class="awards__description">for the category Promoting Education</p>
-            </div>
-          </div>
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+        <div class="cardsContainer__cards--wrapper-itemRight item3">
+            <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemRight__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemRight item4">
+          <div class="cardsContainer__cards--wrapper-itemRight-content">
+            <h2 class="cardsContainer__cards--wrapper-itemRight-content__boldText">CSR Journel Excellence Awards</h2>
+            <p class="cardsContainer__cards--wrapper-itemRight-content__basicText">for the category promoting education</p>
           </div>
         </div>
-        <div class="awards__item">
-          <img class="awards__image" src="https://picsum.photos/536/354" alt="CSR Journal Excellence Award 2023">
-          <div class="awards__details">
-            <p class="awards__category">CSR Journal Excellence Awards 2023</p>
-            <p class="awards__description">for the category Promoting Education</p>
+        <div class="cardsContainer__cards--wrapper-itemRight item5">
+          <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemRight__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemRight item6">
+          <div class="cardsContainer__cards--wrapper-itemRight-content">
+            <h2 class="cardsContainer__cards--wrapper-itemRight-content__boldText">CSR Journel Excellence Awards</h2>
+            <p class="cardsContainer__cards--wrapper-itemRight-content__basicText">for the category promoting education</p>
+          </div>
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemRight item7">
+            <img src="./assets/awards.png" class="cardsContainer__cards--wrapper-itemRight__images" alt="awards">
+        </div>
+        <div class="cardsContainer__cards--wrapper-itemRight item8">
+          <div class="cardsContainer__cards--wrapper-itemRight-content">
+            <h2 class="cardsContainer__cards--wrapper-itemRight-content__boldText">CSR Journel Excellence Awards</h2>
+            <p class="cardsContainer__cards--wrapper-itemRight-content__basicText">for the category promoting education</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="awards__footer">
-      <a href="#" class="awards__view-all">View All Awards</a>
-    </div>
-  </section> -->
 
+    <div class="cardsContainer__button">View All Awards →</div>
+  </div>   
 
-
-  <div class="container8">
+    <!-- <div class="container8">
     <h1>Meet the face behind the impact</h1>
     <h2>SUCCESS STORIES</h2>
     <div class="carousel">
@@ -658,9 +668,11 @@
         <button class="nav-buttonn">&#8249;</button>
         <button class="nav-buttonn">&#8250;</button>
     </div>
-</div>
-<div class="carouselContainer">
-    <h1 class="carouselContainer__subheading">Meet the face behind the impact</h1>
+</div>   -->
+
+    <!-- fully ok  -->
+     <div class="carouselContainer">
+    <h1 class="carouselContainer__subheading"><em>Meet the face behind the impact</em></h1>
     <h2 class="carouselContainer__mainheading">SUCCESS STORIES</h2>
     <div class="carouselContainer__carousel">
         <div class="carouselContainer__carousel--profile">
@@ -668,17 +680,17 @@
             <div class="carouselContainer__carousel--profile-name">Jennifer </div>
             <div class="carouselContainer__carousel--profile-title">Recharging Water and Lives</div>
         </div>
-        <div class="carouselContainer__carousel--profile active">
+        <div class="carouselContainer__carousel--profile ">
             <img src="https://picsum.photos/536/354" alt="Jennifer Christopher" class="profile-image">
             <div class="carouselContainer__carousel--profile-name">Jennifer Christopher</div>
             <div class="title">Recharging Water and Lives</div>
         </div>
-        <div class="carouselContainer__carousel--main-profile">
+        <div class="carouselContainer__carousel--main-profile active">
             <img src="https://picsum.photos/200/300?grayscale" alt="Venkata Narasimharajuvaripeta" class="profile-image">
             <div class="carouselContainer__carousel--profile-name main-name">Venkata Narasimharajuvaripeta</div>
             <div class="title">Paralympics Gold Medalist</div>
         </div>
-        <div class="carouselContainer__carousel--profile active">
+        <div class="carouselContainer__carousel--profile ">
             <img src="https://picsum.photos/200/300?grayscale" alt="Jennifer Christopher" class="profile-image">
             <div class="carouselContainer__carousel--profile-name">Christopher</div>
             <div class="title">Recharging Water and Lives</div>
@@ -694,12 +706,10 @@
         <button class="carouselContainer__navigation-button--nav-buttonn">&#8249;</button>
         <button class="carouselContainer__navigation-button--nav-buttonn">&#8250;</button>
     </div>
-</div>
+</div>     
 
-
-
-
-<div class="contactSection">
+    <!--  correct  -->
+     <!-- <div class="contactSection">
     <div class="contactSection__leftsection">
         <h2 class="contactSection__leftsection--subheading">Want to collaborate?</h2>
         <h1 class="contactSection__leftsection--heading">CONNECT WITH US</h1>
@@ -717,20 +727,13 @@
                 <i class="fas fa-handshake icon"></i>
                 <span class="mails">Business: <span class="email">business@company.com</span></span>
             </div>
-            <!-- <div>
-                <i class="fas fa-handshake"></i>
-                <span>Business: <span class="email">business@company.com</span></span>
-            </div>
-            <div>
-                <i class="fas fa-handshake"></i>
-                <span>Business: <span class="email">business@company.com</span></span>
-            </div> -->
+         
         </div>
         <div class="contactSection__leftsection--socialIcons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
+            <img src="./assets/facebook.png" class="fab fa-facebook " alt='facebook'>
+            <img src="./assets/facebook.png"class="fab fa-youtube" alt='youtube'>
+            <img src="./assets/linkedin.png" class="fab fa-linkedin" alt='linkedin'>
+            <img src="./assets/instagram.png" class="fab fa-instagram" alt='instagram'>
         </div>
     </div>
     <div class="contactSection__rightSection">
@@ -751,7 +754,7 @@
             </div>
             <div class="contactSection__rightSection--middle-company">
                 <label class="label" for="company">Company</label>
-                <select id="company" name="company">
+                <select id="company" name="company" class="contactSection__rightSection--middle-company__select" >
                     <option>Select Option</option>
                     <option>One</option>
                     </select>
@@ -771,21 +774,308 @@
 
      
     </div>
-</div>
+</div>        -->
+
+     <!-- <footer class="footer">
+    <header class="footer__top">
+        <div class="footer__top--logo">
+            <div class="footer__top--logo-logoImg"><img src="./assets/footerLogo.png" alt="logo" class="logo-img"></div>
+        </div>
+
+        <div class="footer__top--Right">
+            <div class="footer__top--Right-socialIcons">
+                <a href="#" class="footer__top--socialIcons-link"><img src="./assets/facebook.png"></a>
+                <a href="#" class="footer__top--socialIcons-link"><img src="./assets/youtube.png"></a>
+                <a href="#" class="footer__top--socialIcons-link"><img src="./assets/linkedin.png"></a>
+                <a href="#" class="footer__top--socialIcons-link"><img src="./assets/instagram.png"></a>
+                <a href="#" class="footer__top--socialIcons-link"><img src="./assets/twitter.png"></a>
+            </div>
+            <div class="footer__top--Right-contactInfo">
+                <div class="footer__top--Right-contactInfo__location">
+                        <P>Location icon</P>
+                    <p>Corporate Address: 8th Floor, Tower1, One Indiabulls Centre, 841, S.B. Marg, Elphinstone Road, Mumbai - 400013</p>
+                </div>
+                <div class="footer__top--Right-contactInfo__email">
+                     <P>Email icon</P>
+                    <p>sattvam@indusind.com</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="footer___Menu">
+        
+      <div class="footer___Menu__column">
+            <h3 class="footer___Menu__column--highlight">CSR Home</h3>
+            <a href="#" class="footer___Menu__column--highlight-links">Introduction</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Impacts</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Programs</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Core Values</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Recent Highlights</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Success Stories</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Awards</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Connect with Us</a>
+        </div>
+      <div class="footer___Menu__column">
+            <h3 class="footer___Menu__column--highlight">CSR Home</h3>
+            <a href="#" class="footer___Menu__column--highlight-links">Introduction</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Impacts</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Programs</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Core Values</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Recent Highlights</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Success Stories</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Awards</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Connect with Us</a>
+        </div>
+      <div class="footer___Menu__column">
+            <h3  class="footer___Menu__column--highlight">CSR Home</h3>
+            <a href="#" class="footer___Menu__column--highlight-links">Introduction</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Impacts</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Programs</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Core Values</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Recent Highlights</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Success Stories</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Awards</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Connect with Us</a>
+        </div>
+      <div class="footer___Menu__column">
+            <h3 class="footer___Menu__column--highlight">CSR Home</h3>
+            <a href="#" class="footer___Menu__column--highlight-links">Introduction</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Impacts</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Programs</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Core Values</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Recent Highlights</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Success Stories</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Awards</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Connect with Us</a>
+        </div>
+      <div class="footer___Menu__column">
+            <h3 class="footer___Menu__column--highlight">CSR Home</h3>
+            <a href="#" class="footer___Menu__column--highlight-links">Introduction</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Impacts</a>
+            <a href="#" class="footer___Menu__column--highlight-links">CSR Programs</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Core Values</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Recent Highlights</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Success Stories</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Awards</a>
+            <a href="#" class="footer___Menu__column--highlight-links">Connect with Us</a>
+      </div>
+    </nav>
+    <div class="footerBottom">
+        <div class="footerBottom__menu">
+           
+            <div class="footerBottom__menu--column">
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
 
 
+
+
+
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                   
+                </h4>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+   
+                </h4>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                 
+                </h4>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                </h4>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                </h4>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                </h4>
+
+
+
+
+
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+              
+            </div>
+            <div class="footerBottom__menu--column">
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+            </div>
+            <div class="footerBottom__menu--column">
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                
+                </h4>
+
+            </div>
+            <div class="footerBottom__menu--column">
+                <h4 class="footerBottom__menu--column--strong">
+                    About Us
+                    <button class="accordion-button">+</button>
+                </h4>
+                <div class="accordion-content">
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Company</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Investor Relations</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Media & Brands</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Careers</a>
+                    <a href="#" class="footerBottom__menu--column--strong-hyperlink">Initiatives</a>
+                </div>
+                
+            </div>
+          <div class="footerBottom__menu--column lastCol">
+            <div class='footerBottom__menu--column-last'>
+              <input class="footerBottom__menu--column-last__input">
+              <button class="footerBottom__menu--column-last__button">Submit</button>
+            </div>
+          <p class='follow'>Follow Us</p>
+          <div class='footerBottom__menu--column-icons'>
+            <p><img src="./assets/facebook.png " ></p>
+            <p><img src="./assets/facebook.png " ></p>
+            <p><img src="./assets/facebook.png " ></p>
+            <p><img src="./assets/facebook.png " ></p>
+            <p><img src="./assets/facebook.png " ></p>
+            <p><img src="./assets/facebook.png " ></p>
+          </div>
+          
+          
+               
+               
+            </div>
+       
+        </div>
+        <div class="footerBottom__description">
+            <p>Registered Office: IndusInd Bank Limited, 2401 Gen. Thimmayya Road (Cantonment), Pune-411 001, India.</p>
+            <p>Tel: 020-26341201/ 020-66019000 CIN:L65191PN1994PLC076333</p>
+            <p>For any Shareholder's queries or grievances contact Mr. Raghunath Poojary at investor@indusind.com</p>
+            <p>Terms & Conditions | Privacy Policy | Sitemap</p>
+            <p>Copyright © 2024 IndusInd Bank.</p>
+        </div>
+<hr>
+        <div class="footerBottom__final">
+            
+            <div class="footerBottom__final--left">
+                
+                <p>Terms and Condition</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footerBottom__final--right">
+                <p>Copyright text</p>
+            </div>
+        </div>
+    </div>
+</footer>       -->
 
     <script>
-    
-        document.addEventListener('DOMContentLoaded', function() {
-            const navButtons = document.querySelectorAll('.nav-button');
-            navButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    alert('Navigation functionality would be implemented here');
-                });
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        const navButtons = document.querySelectorAll(".nav-button");
+        navButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            alert("Navigation functionality would be implemented here");
+          });
         });
+      });
     </script>
     <script src="script.js"></script>
-</body>
+    <script src="script2.js"></script>
+    <script src="ripple.js"></script>
+    <script src="component8.js"></script>
+  </body>
 </html>

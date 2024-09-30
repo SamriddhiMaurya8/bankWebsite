@@ -1,27 +1,25 @@
 @import "_variables";
-
+@import 'mixin';
 .carouselContainer {
-  max-width: 1200px;
-  margin: 0 auto;
+ 
+  max-width: 100%;
+  
   padding: 20px;
   text-align: center;
 
   &__subheading {
-    color: $color3;
-    font-size: 24px;
+    @include heading-style(1rem , $color3 , 0) ; 
+    
     margin-bottom: 0;
 
-    @media (max-width: 768px) {
-        font-size: 24px;
-    }
+  
   }
   &__mainheading {
-    color: $color2;
-    font-size: 36px;
-    margin-top: 5px;
+    @include heading-style(3rem , $color2 , 5px) ; 
+    
 
-    @media screen and (max-width:768px) {
-        font-size: 36px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
     }
   }
   &__carousel {
@@ -30,8 +28,10 @@
     align-items: center;
     flex-direction: row;
     margin-top: 20px;
+    overflow-x: auto;
 
     &--profile {
+      
       width: 200px;
       margin: 0 10px;
       .profile-image {
@@ -39,53 +39,53 @@
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        border: 5px solid $color9;
-
+        
         @media screen and (max-width: 768px) {
-            max-width: 400px;
+          max-width: 400px;
         }
-    }
-    &-name {
+        
+      }
+      &-name {
         font-weight: bold;
         margin-top: 10px;
-        
+
         @media screen and (max-width: 768px) {
-            font-size: 24px;
+          font-size: 21px;
         }
-        
-    }
-    &-title {
+      }
+      &-title {
         font-size: 14px;
-        color:$color3;
+        color: $color3;
         @media screen and (max-width: 768px) {
-            font-size: 18px;
+          font-size: 18px;
         }
-    }
+      }
 
-    @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         display: none;
+      }
     }
-}
 
-&--main-profile {
-    width: 300px;
-    margin: 0 20px;
-    .profile-image {
+    &--main-profile {
+      width: 300px;
+      margin: 0 20px;
+      .profile-image {
         width: 300px;
         height: 300px;
+        border-radius: 50%;
+      }
     }
-}
-}
-&__description {
-    // max-width: 800px;
-    margin: 20px auto;
+  }
+  &__description {
+    max-width: 100vw;
+   
     font-size: 14px;
     color: $color3;
     line-height: 1.5;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     @media screen and (max-width: 768px) {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
   &__navigation-button {
@@ -107,13 +107,15 @@
     }
   }
 
-
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     max-width: 700px;
   }
+
 }
 .main-name {
   color: $color4;
 }
+
+
 
 

@@ -1,0 +1,6 @@
+@mixin heading-style($font-size, $color , $margin-top) {
+    font-size: $font-size;
+    color: $color;
+    margin-top:$margin-top ; 
+  }
+  
